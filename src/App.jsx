@@ -11,7 +11,7 @@ export default function App() {
     },
     {
       id: 1,
-      text: "Buying food at the market.",
+      text: "Buying food at the market",
       done: false,
     },
   ]);
