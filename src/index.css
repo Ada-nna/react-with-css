@@ -1,13 +1,83 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  width: 50%;
+  margin: 20px auto;
 }
+header > h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+form {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+form input {
+  width: 80%;
+  padding: 10px 5px;
+  border: none;
+  outline: none;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  min-width: 100px;
+  padding: 10px 2px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+div.todos_container {
+  margin: 20px 0;
+}
+div.todos_container div:first-child {
+  margin-bottom: 10px;
+}
+div.todos_container li {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+div.todos_container li.done {
+  opacity: 0.5;
+}
+
+div.todos_container li > div {
+  display: flex;
+  gap: 10px;
+}
+/* 
+button.done {
+  background-color: dodgerblue;
+  color: white;
+}
+button.delete {
+  background-color: red;
+  color: white;
+  opacity: 0.8;
+} */
